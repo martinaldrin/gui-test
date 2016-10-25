@@ -1,4 +1,4 @@
-package main.java.test;
+package test;
 
 public class Data {
 	String id;

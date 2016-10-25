@@ -1,4 +1,4 @@
-package main.java.test;
+package test;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -38,7 +38,7 @@ public class Server {
 	}
 
 	private static String getId() {
-		List<String> ids = new ArrayList<>();
+		List<String> ids = new ArrayList<String>();
 		ids.add("2691882127991893");
 		ids.add("2691882127234543");
 		ids.add("2691882127221587");
@@ -53,5 +53,4 @@ public class Server {
 	private static int getType() {
 		return 1 + (int) (Math.random() * 3);
 	}
-
 }
