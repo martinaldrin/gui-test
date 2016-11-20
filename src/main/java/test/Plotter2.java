@@ -15,7 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class Plotter extends JPanel implements Runnable {
+public class Plotter2 extends JPanel implements Runnable {
 	private final BlockingQueue messageQueue = new ArrayBlockingQueue(2048);
 	ImageIcon worldMapImage = getBackgroundImage();
 
@@ -35,7 +35,7 @@ public class Plotter extends JPanel implements Runnable {
 		//frame.getContentPane().add(getIcon(1,20,120));
 		frame.add(new Plotter());
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(600, 600);
+		frame.setSize(400, 400);
 		frame.setLocationRelativeTo(null);
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
